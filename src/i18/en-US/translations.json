@@ -1,0 +1,8 @@
+{
+  "general.button.cancel": "Cancel",
+  "general.message.online": "Online",
+  "general.message.offline": "Offline",
+  "header.message": "React OpenAPI",
+  "home.welcome": "Generate an Image using Open AI",
+  "home.image": "Generate an Image"
+}
