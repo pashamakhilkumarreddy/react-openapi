@@ -4,22 +4,19 @@ import React from 'react';
  * The `Footer` component renders the footer section of the application.
  * It includes the application name and copyright notice, as well as social media links.
  * The footer is styled to be displayed at the bottom of the page.
- * 
  * @component
- * 
  * @example
  * return (
  *   <Footer />
  * );
- * 
  * @returns {JSX.Element} The JSX element representing the footer of the application.
  */
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 text-white py-6">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="flex flex-row justify-center items-center mb-4 md:mb-0">
+    <footer className="bg-gray-800 py-6 text-white">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center justify-between md:flex-row">
+          <div className="mb-4 flex flex-row items-center justify-center md:mb-0">
             <h2 className="text-lg font-bold">React OpenAPI &nbsp;</h2>
             <p className="text-gray-400">
               &copy; 2024 React OpenAPI. All rights reserved.
@@ -29,7 +26,7 @@ const Footer: React.FC = () => {
             <a href="#" className="text-gray-400 hover:text-white">
               <span className="sr-only">Facebook</span>
               <svg
-                className="w-6 h-6"
+                className="h-6 w-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +37,7 @@ const Footer: React.FC = () => {
             <a href="#" className="text-gray-400 hover:text-white">
               <span className="sr-only">Twitter</span>
               <svg
-                className="w-6 h-6"
+                className="h-6 w-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +48,7 @@ const Footer: React.FC = () => {
             <a href="#" className="text-gray-400 hover:text-white">
               <span className="sr-only">Instagram</span>
               <svg
-                className="w-6 h-6"
+                className="h-6 w-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"

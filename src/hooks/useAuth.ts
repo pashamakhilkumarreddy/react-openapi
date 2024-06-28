@@ -2,8 +2,7 @@ import { useEffect } from 'react';
 
 /**
  * Custom hook for handling authentication.
- *
- * @returns {Object} An object containing user authentication information.
+ * @returns {object} An object containing user authentication information.
  * @property {boolean | undefined} isAuthenticated - Indicates whether the user is authenticated.
  */
 export const useAuth = () => {
@@ -11,6 +10,6 @@ export const useAuth = () => {
   useEffect(() => {}, []);
 
   return {
-    isAuthenticated
+    isAuthenticated,
   };
 };

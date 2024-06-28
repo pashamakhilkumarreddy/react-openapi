@@ -4,10 +4,14 @@ import { OPENAPI_KEY } from 'config';
 import { useTranslation } from 'react-i18next';
 import useImageStore from 'store/images';
 
+const openai = new OpenAI({
+  apiKey: OPENAPI_KEY!,
+  dangerouslyAllowBrowser: true,
+});
+
 /**
  * The `Home` component represents the main page where users can input a prompt to generate images using OpenAI's API.
  * It provides a text area for prompt input, a button to trigger image generation, and a gallery to display generated images.
- *
  * @component
  * @example
  * return (
@@ -19,11 +23,6 @@ const Home: FC = () => {
   const prompt = useImageStore((state) => state.prompt);
   const setPrompt = useImageStore((state) => state.setPrompt);
   const [images, setImages] = useState<string[]>([]);
-
-  const openai = new OpenAI({
-    apiKey: OPENAPI_KEY!,
-    dangerouslyAllowBrowser: true,
-  });
 
   const generateImage = async () => {
     try {

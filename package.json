@@ -17,7 +17,7 @@
     "lint-md:fix": "eslint '**/*.md' --fix",
     "format": "prettier --config ./.prettierrc --no-editorconfig --check .",
     "format:fix": "prettier --config ./.prettierrc --no-editorconfig --ignore-unknown --write .",
-    "prepare": "husky"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.45.1",
@@ -53,8 +53,8 @@
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5",
+    "rollup-plugin-visualizer": "^5.12.0",
     "stylelint": "^16.7.0",
-    "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^36.0.1",
     "stylelint-order": "^6.0.4",
     "stylelint-prettier": "^5.0.0",
@@ -65,19 +65,19 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npx lint-staged"
     }
   },
   "lint-staged": {
-    "**/*.{ts,tsx,js,jsx,json}": [
+    "src/**/*.{ts,tsx,js,jsx,json}": [
       "prettier --write --no-editorconfig",
       "eslint --report-unused-disable-directives --fix --max-warnings 0"
     ],
-    "**/*.css": [
+    "src/**/*.css": [
       "stylint --fix",
       "prettier --write --no-editorconfig"
     ],
-    "*.md": [
+    "src/**/*.md": [
       "prettier --write --no-editorconfig"
     ]
   }

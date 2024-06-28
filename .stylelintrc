@@ -1,40 +1,56 @@
 {
-    "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
-    "plugins": ["stylelint-prettier", "stylelint-order"],
-    "rules": {
-      "prettier/prettier": true,
-      "order/order": [
-        "custom-properties",
-        "dollar-variables",
-        "at-rules",
-        "declarations",
-        {
-          "type": "at-rule",
-          "name": "media"
-        },
-        "rules"
-      ],
-      "order/properties-order": [
-        {
-          "properties": ["content", "position", "top", "right", "bottom", "left", "z-index"]
-        },
-        {
-          "properties": ["display", "flex", "flex-direction", "justify-content", "align-items"]
-        },
-        {
-          "properties": ["width", "height", "margin", "padding", "border"]
-        },
-        {
-          "properties": ["color", "font-size", "line-height", "text-align"]
-        }
-      ],
-      "block-no-empty": true,
-      "color-no-invalid-hex": true,
-      "declaration-block-no-duplicate-properties": [true, {
+  "extends": ["stylelint-config-standard", "stylelint-prettier/recommended"],
+  "plugins": ["stylelint-prettier", "stylelint-order"],
+  "rules": {
+    "prettier/prettier": true,
+    "order/order": [
+      "custom-properties",
+      "dollar-variables",
+      "at-rules",
+      "declarations",
+      {
+        "type": "at-rule",
+        "name": "media"
+      },
+      "rules"
+    ],
+    "order/properties-order": [
+      {
+        "properties": [
+          "content",
+          "position",
+          "top",
+          "right",
+          "bottom",
+          "left",
+          "z-index"
+        ]
+      },
+      {
+        "properties": [
+          "display",
+          "flex",
+          "flex-direction",
+          "justify-content",
+          "align-items"
+        ]
+      },
+      {
+        "properties": ["width", "height", "margin", "padding", "border"]
+      },
+      {
+        "properties": ["color", "font-size", "line-height", "text-align"]
+      }
+    ],
+    "block-no-empty": true,
+    "color-no-invalid-hex": true,
+    "declaration-block-no-duplicate-properties": [
+      true,
+      {
         "ignore": ["consecutive-duplicates"]
-      }],
-      "font-family-no-duplicate-names": true,
-      "unit-no-unknown": true
-    }
+      }
+    ],
+    "font-family-no-duplicate-names": true,
+    "unit-no-unknown": true
   }
-  
+}

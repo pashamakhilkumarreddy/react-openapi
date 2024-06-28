@@ -1,3 +1,3 @@
-import Fallback from "./Fallback";
+import Fallback from './Fallback';
 
 export default Fallback;

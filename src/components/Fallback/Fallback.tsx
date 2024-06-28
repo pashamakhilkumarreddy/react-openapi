@@ -6,11 +6,9 @@ import { ProgressSpinner } from 'primereact/progressspinner';
  * This component is used to display a loading indicator when the content is being loaded.
  * It shows a message indicating that loading is in progress and includes a spinner
  * to visually represent the loading state.
- *
  * @component
  * @example
  * return <Fallback />;
- *
  * @returns {JSX.Element} The JSX element containing a loading message and spinner.
  */
 const Fallback = () => {

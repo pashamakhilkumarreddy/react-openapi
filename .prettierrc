@@ -9,14 +9,10 @@
   "useTabs": false,
   "importOrder": ["^react(.*)", "<THIRD_PARTY_MODULES>", "@/(.*)", "^[./]"],
   "importOrderSeparation": true,
-  "plugins": [
-    "prettier-plugin-tailwindcss"
-  ],
+  "plugins": ["prettier-plugin-tailwindcss"],
   "overrides": [
     {
-      "files": [
-        "*.md"
-      ],
+      "files": ["*.md"],
       "options": {
         "tabWidth": 4
       }

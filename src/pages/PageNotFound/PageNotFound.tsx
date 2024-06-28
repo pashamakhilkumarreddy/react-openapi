@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 /**
  * The `NotFound` component is displayed when a user navigates to a route that does not exist.
  * It provides a message indicating that the page was not found and offers a button to navigate back to the home page.
- *
  * @component
  * @example
  * return (

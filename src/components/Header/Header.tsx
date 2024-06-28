@@ -2,14 +2,14 @@ import { Button } from 'primereact/button';
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { HeaderLinks as links } from 'config';
+import MenuIcon from './MenuIcon';
+import CloseIcon from './CloseIcon';
 
 /**
  * The `Header` component displays the navigation bar of the application.
  * It includes the application title, user location (if available), navigation links, and an online/offline status indicator.
  * The header adjusts its layout for mobile and desktop views.
- *
  * @component
- *
  * @example
  * return (
  *   <Header />
@@ -120,36 +120,8 @@ const Header: React.FC = () => {
                 aria-expanded="false"
               >
                 <span className="sr-only">Open main menu</span>
-                <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-                <svg
-                  className="hidden h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
+                <MenuIcon />
+                <CloseIcon />
               </button>
             </div>
           </div>

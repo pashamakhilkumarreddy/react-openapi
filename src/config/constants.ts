@@ -1,6 +1,6 @@
 export const NODE_ENV = import.meta.env.VITE_NODE_ENV as
-| 'development'
-| 'production';
+  | 'development'
+  | 'production';
 export const APP_MODE = import.meta.env.VITE_APP_MODE as
   | 'development'
   | 'production';

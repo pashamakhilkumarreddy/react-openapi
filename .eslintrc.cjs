@@ -15,7 +15,7 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    'spellcheck/spell-checker': ['warn'],
+    'spellcheck/spell-checker': ['off'],
     'jsdoc/require-description': 'warn',
   },
 };
